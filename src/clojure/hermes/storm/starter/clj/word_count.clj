@@ -13,7 +13,7 @@
 ;; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
-(ns org.apache.storm.starter.clj.word-count
+(ns hermes.storm.starter.clj.word-count
   (:import [org.apache.storm StormSubmitter]
            [org.apache.storm.utils Utils])
   (:use [org.apache.storm clojure config])
@@ -86,6 +86,3 @@
    (submit-topology! "test"))
   ([name]
    (submit-topology! name)))
-
-
-(-main)

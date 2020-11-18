@@ -13,13 +13,13 @@
 ;; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
-(ns org.apache.storm.starter.clj.rolling-top-words
+(ns hermes.storm.starter.clj.rolling-top-words
   (:require [org.apache.storm [clojure :refer :all] [config :refer :all]]
-            [org.apache.storm.starter.clj.bolts :refer
+            [hermes.storm.starter.clj.bolts :refer
              [rolling-count-bolt intermediate-rankings-bolt total-rankings-bolt]])
   (:import [org.apache.storm StormSubmitter]
-    [org.apache.storm.utils Utils]
-    [org.apache.storm.testing TestWordSpout])
+           [org.apache.storm.utils Utils]
+           [org.apache.storm.testing TestWordSpout])
   (:gen-class))
 
 (defn mk-topology []

@@ -13,7 +13,7 @@
 ;; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
-(ns org.apache.storm.starter.clj.bolts
+(ns hermes.storm.starter.clj.bolts
   (:require [org.apache.storm
              [clojure :refer :all]
              [config :refer :all]

@@ -1,5 +1,5 @@
 (ns hermes.storm
-  (:import [org.apache.storm StormSubmitter]
+  (:import [org.apache.storm StormSubmitter]:
            [org.apache.storm.utils Utils])
   (:require
    [org.apache.storm.clojure :as storm]
@@ -17,6 +17,13 @@
 
 (comment
 
+  (import '[org.apache.storm.starter WordCountTopology])
+
+  (require '[org.apache.storm.starter.WordCountTopology :as wct])
+
+  (-> (WordCountTopology/main (into-array ["ali" "bala"])))
+
+  (-> )
   (import 'hermes.java.storm.Alaki)
 
   (-> (Alaki/main (into-array ["ali" "bala"])))
@@ -74,7 +81,7 @@
 
   (submit-topology! "alaki")
 
-)
+  )
 
 ;;------------------------------------------------------------------;;
 ;;------------------------------------------------------------------;;
