@@ -35,7 +35,7 @@
   :profiles {:dev {:global-vars {*warn-on-reflection* true
                                  *assert*             true}
 
-                   :plugins [;;[lein-virgil "0.1.9"]
+                   :plugins [[lein-virgil "0.1.9"]
                              [venantius/yagni "0.1.7"]
                              [lein-kibit "0.1.6"]
                              [jonase/eastwood "0.3.5"]]}
